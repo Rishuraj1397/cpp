@@ -5,6 +5,7 @@ int main() {
     // Declare and initialize an array
     int arr[5] = {10, 20, 30, 40, 50};
     
+    arr[2] = 100;
     // Access array elements
     cout << "Array elements:" << endl;
     for (int i = 0; i < 5; i++) {
@@ -13,8 +14,7 @@ int main() {
     cout << endl;
     
     // Modify an element
-    arr[2] = 100;
-    cout << "After modification: " << arr[2] << endl;
+    // cout << "After modification: " << arr[2] << endl;
     
     return 0;
 }
