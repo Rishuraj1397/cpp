@@ -1,0 +1,7 @@
+# Maximum subarray
+- Logic behind this question is we will start our first loop from start to n-1 or less then < n  and inside this for loop we will start another for loop for end which will start from start to < n or n-1 this will find all the subarray which will start from the first for loop number after that we will print that subarray using another loop inside second one which will start from strt and goes to end so that every possible subarray will print out
+
+# Maximum Subarray sum
+- for this one we first we have to initialized the max sum with INT_MIN so that further we will compare this with sum value to find which is bigger and like maximum subarray and curent sum which will store the curret sum of that itteration
+    - after that we will initialized first loop which will go from o to less than < n and inside this loop we will calculate the current sum of this itereation by adding cuurnt sum + arr[i] and after this we will compare this current sum with max sum for maximum value
+    - after this we will check if the previous sum value is less than 0 we will discard that value and store current sum = 0 and after that we will print or return the maximum sum value outside the loop
