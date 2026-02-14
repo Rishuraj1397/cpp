@@ -1,13 +1,13 @@
-// Printing from 1 to n with backtracking
+// Printing from N to 1 with backtracking
 
 #include <iostream>
 using namespace std;
 
 void print(int i, int n){
-    if(i < 1){
+    if(i > n){
         return;
     }
-    print(i-1,n);
+    print(i+1,n);
     cout<< i <<endl;
 }
 int main()
@@ -15,6 +15,6 @@ int main()
     int n;
     cout<<"Enter n: ";
     cin>>n;
-    print(n,n);
+    print(1,n);
     return 0;
 }
