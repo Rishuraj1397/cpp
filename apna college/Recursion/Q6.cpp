@@ -1,4 +1,4 @@
-// sum of 1 to n numbers using recursion
+// sum of 1 to n numbers using recursion.  this is the parameterised way perform this addtion
 
 #include <iostream>
 using namespace std;
