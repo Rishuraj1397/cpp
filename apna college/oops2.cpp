@@ -18,7 +18,8 @@ public:
     
     Student(Student &obj){
         this->name = obj.name;
-        this->cgpaPtr = obj.cgpaPtr;
+        cgpaPtr = new double;
+        *cgpaPtr = *obj.cgpaPtr;
     }
 
 
@@ -35,6 +36,5 @@ int main()
     
     s1.getinfo();
     *(s2.cgpaPtr) = 9.2;
-    s1.getinfo();//we are expecting here that rahul cgpa would be same 8.9 bcz we have'nt changed rahul grades but due to shallow copy rahul grades got changed to 9.2
-    return 0;
+    s1.getinfo();
 }
