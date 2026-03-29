@@ -37,4 +37,8 @@ int main()
     s1.getinfo();
     *(s2.cgpaPtr) = 9.2;
     s1.getinfo();
+
+    s2.name = "Neha kumari";
+    s2.getinfo();
+    return 0;
 }
