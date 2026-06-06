@@ -1,25 +1,27 @@
-// Priinting name N times using recursion
-
+// Printing name N times
 #include <iostream>
 using namespace std;
 
+class Solution {
+public:
+    void printName(string name, int count, int N) {
+        if (count == N)
+            return;
 
-void name(int i, int n){
-    if (i > n)
-    {
-        return;
-    }else{
-        cout << "Rishu" << endl;
-        i++;
-        name(i, n);
+        cout << name << "\n";
+
+        printName(name, count + 1, N);
     }
-    
-}
-int main()
-{
-    int n;
-    cout << "Enter the value of n: ";
-    cin >> n;
-    name(1, n);
+};
+
+int main() {
+    Solution sol;
+    int N;
+    cout << "Enter the value of N: ";
+    cin >> N;
+    string name = "Rishu";
+
+    sol.printName(name, 0, N);
+
     return 0;
 }
