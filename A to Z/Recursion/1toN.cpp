@@ -1,28 +1,26 @@
-// Printing 1 to n using recursion
-
 #include <iostream>
 using namespace std;
 
+class Solution {
+public:
+    void printName(string name, int count, int N) {
+        if (count == N)
+            return;
 
+        cout << name << "\n";
 
-
-void N(int i, int n){
-    if(i > n){
-        return;
+        printName(name, count + 1, N);
     }
-    else{
-        cout << i << endl;
-        i++;
-        N(i, n);
-    }
-}
-int main()
-{
-    int n;
-    cout << "Enter the value of n: ";
-    cin >> n;
+};
 
-    N(1,n);
-    
+int main() {
+    Solution sol;
+    int N;
+    cout << "Enter the value of N: ";
+    cin >> N;
+    string name = "Rishu";
+
+    sol.printName(name, 0, N);
+
     return 0;
 }
